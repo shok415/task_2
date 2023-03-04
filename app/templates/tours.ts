@@ -3,7 +3,7 @@ import {images} from "@services/img/img";
 
 
 // указать возвращающий тип и тип для параметра
-export function getTourTemplate(obj: { name: any; img: any; description: any; price: any; }, i: number) {
+export function getTourTemplate(obj: { name: any; img: any; description: any; price: any; }, i: number):string {
     const tmpl = ` 
        <div  data-tour-item-index=${i} class="tour-block">
            <h2>${obj.name}</h2>
